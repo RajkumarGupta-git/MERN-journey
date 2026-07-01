@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Form</title>
+    </head>
+    <body>
+        <form action="/action">
+            <div>
+                <label for="username">Enter your Username:</label>
+                <input type="text" id="username" placeholder="username" name="name">
+            </div>
+            <br>
+            <div>
+                <label for="password">Password :</label>
+                <input type="password" name="pass" id="password" placeholder="password">
+            </div>
+            <br>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Enter Age">
+            </div>
+            <br>
+            <div>
+                <input type="checkbox" id="Computer" name="Sub" value="Comp">
+                <label for="Computer">Computer</label>
+                <input type="checkbox" id="English" name="Sub" value="Eng">
+                <label for="English">English</label>
+                <input type="checkbox" id="Hindi" name="Sub" value="Hin">
+                <label for="Hindi">Hindi</label>
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="fruit" id="apple" value="apple">
+                <label for="apple">Apple</label>
+                <input type="radio" name="fruit" id="Mango" value="mango">
+                <label for="Mango">Mango</label>
+                <input type="radio" name="fruit" id="Banana" value="Banana">
+                <label for="Banana">Banana</label>
+            </div>
+            <br>
+            <div>
+                Choose Your Profession
+                <select name="profesion" id="profession">
+                    <option>Select Your Option</option>
+                    <option value="stu">Student</option>
+                    <option value="dev">Developer</option>
+
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="vol">Select your volume level : </label>
+                <input type="range" id="vol" min="0" max="100" name="vol" > 
+            </div>
+            <br>
+            <div>
+                <label for="feedback">Feedback Form</label>
+                <br>
+                <textarea name="feedback" id="feedback" placeholder="Write Your Feedback"></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+                <button type="button">Button</button>
+            </div>
+
+        </form>
+        <hr>
+        <br><br>
+        <form action="https://www.youtube.com/results">
+            <input type="text" placeholder="Search in Youtube" name="search_query">
+            <button>Search</button>
+
+        </form>
+        <br><br>
+        <form action="https://www.google.com/search">
+            <input type="text" name="q" placeholder="Search in Google ">
+            <button>Search</button>
+        </form>
+    </body>
+</html>
