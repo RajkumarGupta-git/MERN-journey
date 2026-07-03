@@ -1,0 +1,34 @@
+#main_Topic{
+    color: blue;
+}
+
+*{
+    text-align: center;
+}
+
+h1,h3,h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.para{
+    color: white;
+    background-color: cornflowerblue;
+}
+
+button{
+    background-color: purple;
+    color: azure;
+}
+
+button:hover{
+    color: blue;
+    background-color: yellow;
+}
+
+.para p:nth-child(odd) {
+    color: red;
+}
+
+h1::first-letter{
+    color: red;
+}
