@@ -1,0 +1,21 @@
+div{
+    height: 100px;
+    width: 100px;
+    background-color: rgb(255, 149, 27);
+    /* transition: 2s 1s; */
+    margin-top: 10px;
+    margin: 0 auto;
+    transition: margin-top 2s ease-in 0.2s;
+}
+
+/* #opacity{
+    background-color: #ffa511;
+    opacity: 0.5;
+} */
+
+div:hover{
+    /* background-color: black;
+    border-radius: 50%; */
+    margin-top: 400px;
+    background-color: rgb(79, 228, 213);
+}
