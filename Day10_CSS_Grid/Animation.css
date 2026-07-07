@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.box{
+    height: 100px;
+    width: 300px;
+    background-color: rgb(234, 241, 122);
+    /* animation-name: fontAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: alternate; */
+    animation: fontAnimation 3s ease-in 0s 2 normal;
+
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+        color: rgb(29, 231, 163);
+    }
+    to {
+        font-size: 50px;
+        color: rgb(255, 132, 98);
+        border-radius: 25px;
+    }
+}
+
+
+@keyframes colorAnimation {
+    0% {
+        color: rgb(29, 231, 163);
+    }
+    50%{
+        color: rgb(255, 132, 98);
+    }
+    100% {
+        color: rgb(145, 212, 212);
+    }
+}
