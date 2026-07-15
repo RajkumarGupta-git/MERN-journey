@@ -20,5 +20,3 @@ let msg ="Hello!";
 console.log(msg.trim().toUpperCase());
 
 
-let met ="EdutechRaj";
-name.slice(4,7);
