@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Raj Kumar Gupta - Frontend Developer ready for job and internship opportunities.">
+  <title>Raj Kumar Gupta | Frontend Developer Portfolio</title>
+
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+
+  <!-- Background Orbs -->
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-accent">&lt;</span>RajKumar<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <nav class="navbar" id="navbar">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#services" class="nav-link">Services</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <a href="#contact" class="btn btn-outline btn-sm nav-cv">Hire Me</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle Navigation">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="badge">
+            <span class="pulse-dot"></span> Ready for Frontend Roles & Internships
+          </div>
+          
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="text-gradient">Raj Kumar Gupta</span>
+          </h1>
+
+          <!-- Direct Subtitle without extra wrapper container and without cursor blink -->
+          <h2 class="hero-subtitle">
+            <span class="typing-text">Frontend Developer</span>
+          </h2>
+
+          <p class="hero-description">
+            BCA Graduate (2023–2026) specializing in modern Frontend Development. Skilled in HTML5, CSS3, JavaScript, Bootstrap, and API integration with a strong focus on clean, responsive UI and performance.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">
+              <span>Hire Me</span>
+              <i class="fa-solid fa-paper-plane"></i>
+            </a>
+            <a href="https://github.com/RajkumarGupta-git" target="_blank" rel="noopener" class="btn btn-glass">
+              <span>View GitHub Projects</span>
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/RajkumarGupta-git" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:rajkumargupta00423@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:+918858128312" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="image-wrapper">
+            <div class="glow-ring"></div>
+            <div class="profile-card">
+              <div class="code-avatar">
+                <i class="fa-solid fa-laptop-code"></i>
+                <div class="avatar-tag">RKG UI/UX</div>
+              </div>
+            </div>
+
+            <!-- Tech Badges -->
+            <div class="floating-icon float-1" title="HTML5"><i class="fa-brands fa-html5"></i></div>
+            <div class="floating-icon float-2" title="CSS3"><i class="fa-brands fa-css3-alt"></i></div>
+            <div class="floating-icon float-3" title="JavaScript"><i class="fa-brands fa-js"></i></div>
+            <div class="floating-icon float-4" title="GitHub"><i class="fa-brands fa-github"></i></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats" id="stats">
+      <div class="container stats-grid">
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-code-branch"></i></div>
+          <div class="stat-info">
+            <h3 class="counter" data-target="10">0</h3>
+            <p>GitHub Repositories</p>
+          </div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="stat-info">
+            <h3 class="counter" data-target="64">0</h3>
+            <p>BCA Overall (%)</p>
+          </div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <div class="stat-info">
+            <h3 class="counter" data-target="10">0</h3>
+            <p>Tech Skills</p>
+          </div>
+        </div>
+        <div class="stat-card glass-card">
+          <div class="stat-icon"><i class="fa-solid fa-bolt"></i></div>
+          <div class="stat-info">
+            <h3 class="counter" data-target="100">0</h3>
+            <p>Dedication (%)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>About <span>Me</span></h2>
+          <p>My technical background and education roadmap</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-info glass-card">
+            <h3>Frontend Developer & Tech Enthusiast</h3>
+            <p>
+              I am a Bachelor of Computer Applications (BCA) graduate (2023–2026) from Buddha Degree College, Gida (affiliated with Deen Dayal Upadhyay Gorakhpur University).
+            </p>
+            <p>
+              My focus is creating high-quality, pixel-perfect, and fully responsive user interfaces. I love building real-world projects, solving DOM scripting challenges, and keeping my GitHub repositories updated.
+            </p>
+
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-user"></i> Name:</span>
+                <span class="detail-val">Raj Kumar Gupta</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-location-dot"></i> Location:</span>
+                <span class="detail-val">Maharajganj, UP, India</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-envelope"></i> Email:</span>
+                <span class="detail-val">rajkumargupta00423@gmail.com</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label"><i class="fa-solid fa-briefcase"></i> Availability:</span>
+                <span class="detail-val text-accent">Frontend Roles & Internships</span>
+              </div>
+            </div>
+
+            <div class="about-goal">
+              <h4><i class="fa-solid fa-bullseye"></i> Goal & Growth Path</h4>
+              <p>Strengthening Frontend Architecture &rarr; Advancing towards React.js & Full-Stack MERN Development.</p>
+            </div>
+          </div>
+
+          <div class="education-card glass-card">
+            <h3 class="card-title"><i class="fa-solid fa-graduation-cap"></i> Academic Timeline</h3>
+            <div class="edu-timeline">
+              <div class="edu-item">
+                <div class="edu-bullet"></div>
+                <span class="edu-year">2023 - 2026</span>
+                <h4>Bachelor of Computer Applications (BCA)</h4>
+                <p>Buddha Degree College, Gida | DDU Gorakhpur University</p>
+                <span class="score-badge">Marks: 1931 / 3000 (64.37%)</span>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-bullet"></div>
+                <span class="edu-year">2023</span>
+                <h4>Intermediate (12th PCM)</h4>
+                <p>Uttar Pradesh State Board</p>
+                <span class="score-badge">Score: 67%</span>
+              </div>
+
+              <div class="edu-item">
+                <div class="edu-bullet"></div>
+                <span class="edu-year">2021</span>
+                <h4>High School (10th)</h4>
+                <p>CBSE Board</p>
+                <span class="score-badge">Score: 56%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section class="skills section" id="skills">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Technical <span>Skills</span></h2>
+          <p>Languages, Frameworks, and Development Tools</p>
+        </div>
+
+        <div class="skills-filter">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="Frontend">Frontend</button>
+          <button class="filter-btn" data-filter="Backend">Languages & DB</button>
+          <button class="filter-btn" data-filter="Tools">Tools & Design</button>
+        </div>
+
+        <div class="skills-grid" id="skills-container"></div>
+      </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section class="services section" id="services">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>My <span>Services</span></h2>
+          <p>Core solutions I offer with technical precision</p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Frontend Web Development</h3>
+            <p>Building clean, responsive, and cross-browser compatible web interfaces using HTML5, CSS3, JS, and Bootstrap.</p>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
+            <h3>Responsive UI & UX Tuning</h3>
+            <p>Ensuring websites look seamless across all devices including Mobiles, Tablets, and Desktop screens without overflow.</p>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-file-powerpoint"></i></div>
+            <h3>Presentation & PPT Design</h3>
+            <p>Designing modern, visually rich PowerPoint presentations tailored for technical topics, projects, and business reports.</p>
+          </div>
+
+          <div class="service-card glass-card">
+            <div class="service-icon"><i class="fa-solid fa-list-check"></i></div>
+            <h3>Form Handling & JS Utilities</h3>
+            <p>Developing interactive DOM utilities, real-time client validation forms, and API integrations.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects section" id="projects">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>GitHub <span>Projects</span></h2>
+          <p>All source codes synced directly from my official GitHub account</p>
+        </div>
+
+        <div class="projects-grid" id="projects-container"></div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact section" id="contact">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Get In <span>Touch</span></h2>
+          <p>Directly contact me for Job Roles, Internships, or Web Projects</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info glass-card">
+            <h3>Direct Contact Channels</h3>
+            <p>Reach out directly or send an instant form message:</p>
+
+            <div class="info-list">
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="info-label">Email</span>
+                  <a href="mailto:rajkumargupta00423@gmail.com" class="info-val">rajkumargupta00423@gmail.com</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="info-label">Phone</span>
+                  <a href="tel:+918858128312" class="info-val">+91 8858128312</a>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-val">Maharajganj, Uttar Pradesh, India</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="git-repo-note">
+              <i class="fa-brands fa-github"></i>
+              <p>Validation Repository: <a href="https://github.com/RajkumarGupta-git/Modern-Contact-Form-Validation" target="_blank" rel="noopener">View GitHub Code</a></p>
+            </div>
+          </div>
+
+          <!-- Direct Formspree Form Integration -->
+          <div class="contact-form-container glass-card">
+            <form action="https://formspree.io/f/rajkumargupta00423@gmail.com" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Job Opportunity / Web Query" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="4" placeholder="Your message here..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <span>Send Direct Email</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-accent">&lt;</span>RajKumar<span class="logo-accent">/&gt;</span>
+        </a>
+        <p>BCA Graduate & Frontend Developer ready to bring web concepts into high-performing reality.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <div class="social-links">
+          <a href="https://github.com/RajkumarGupta-git" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:rajkumargupta00423@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          <a href="tel:+918858128312" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 Raj Kumar Gupta. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back To Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>

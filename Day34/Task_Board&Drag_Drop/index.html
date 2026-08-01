@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Board Drag & Drop </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <h2>Drag & Drop Task Board</h2>
+
+  <div class="input-container">
+    <input type="text" id="taskInput" placeholder="Enter new task..." />
+    <button id="addBtn">Add Task</button>
+  </div>
+
+  <div class="board">
+    <div class="column" id="todo">
+      <h3>To Do </h3>
+      <div class="cards-container">
+        <div class="card" draggable="true">
+          <span>Learn HTML5 & CSS3</span>
+          <button class="delete-btn">✕</button>
+        </div>
+        <div class="card" draggable="true">
+          <span>Build JS Project</span>
+          <button class="delete-btn">✕</button>
+        </div>
+        <div class="card" draggable="true">
+          <span>Practice Logic</span>
+          <button class="delete-btn">✕</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="column" id="in-progress">
+      <h3>In Progress </h3>
+      <div class="cards-container"></div>
+    </div>
+
+    <div class="column" id="done">
+      <h3>Completed </h3>
+      <div class="cards-container"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
