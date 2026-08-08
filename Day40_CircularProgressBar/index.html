@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Web Development Knowledge Assessment</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+  <main class="test-wrapper">
+    <header class="test-header">
+      <h1 class="main-title">Web Development Knowledge Assessment</h1>
+      <p class="subtitle">Complete the questions below to evaluate your proficiency in HTML, CSS, and JavaScript</p>
+    </header>
+
+    <section class="quiz-container">
+      <article class="quiz-section" id="html-quiz">
+        <h2 class="section-title html-title">HTML Assessment</h2>
+        <div class="questions-list" id="html-questions"></div>
+      </article>
+
+      <article class="quiz-section" id="css-quiz">
+        <h2 class="section-title css-title">CSS Assessment</h2>
+        <div class="questions-list" id="css-questions"></div>
+      </article>
+
+      <article class="quiz-section" id="js-quiz">
+        <h2 class="section-title js-title">JavaScript Assessment</h2>
+        <div class="questions-list" id="js-questions"></div>
+      </article>
+    </section>
+
+    <footer class="bottom-progress-area">
+      <h2 class="progress-heading">Your Progress of Study Knowledge</h2>
+      
+      <div class="progress-grid-wrapper">
+        <div class="progress-item">
+          <div class="circular-progress">
+            <svg viewBox="0 0 160 160">
+              <defs>
+                <linearGradient id="circleGradHTML" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#06b6d4" />
+                  <stop offset="100%" stop-color="#3b82f6" />
+                </linearGradient>
+              </defs>
+              <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
+              <circle class="progress-circle html-bar" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="percentage-text" id="html-text">0%</div>
+          </div>
+          <span class="bar-label">HTML</span>
+        </div>
+
+        <div class="progress-item">
+          <div class="circular-progress">
+            <svg viewBox="0 0 160 160">
+              <defs>
+                <linearGradient id="circleGradCSS" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#a855f7" />
+                  <stop offset="100%" stop-color="#ec4899" />
+                </linearGradient>
+              </defs>
+              <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
+              <circle class="progress-circle css-bar" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="percentage-text" id="css-text">0%</div>
+          </div>
+          <span class="bar-label">CSS</span>
+        </div>
+
+        <div class="progress-item">
+          <div class="circular-progress">
+            <svg viewBox="0 0 160 160">
+              <defs>
+                <linearGradient id="circleGradJS" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#f59e0b" />
+                  <stop offset="100%" stop-color="#ef4444" />
+                </linearGradient>
+              </defs>
+              <circle class="bg-circle" cx="80" cy="80" r="70"></circle>
+              <circle class="progress-circle js-bar" cx="80" cy="80" r="70"></circle>
+            </svg>
+            <div class="percentage-text" id="js-text">0%</div>
+          </div>
+          <span class="bar-label">JavaScript</span>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
