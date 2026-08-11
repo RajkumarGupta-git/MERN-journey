@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AuraQuote - Mini App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <div class="app-card">
+    <div class="card-header">
+      <span class="badge"><i class="fa-solid fa-bolt"></i> Aura Quote</span>
+      <button id="copyBtn" class="icon-btn" title="Copy Quote">
+        <i class="fa-regular fa-copy"></i>
+      </button>
+    </div>
+
+    <div class="quote-content">
+      <p id="quoteText" class="quote-text">"Click the button below to generate your first spark of wisdom."</p>
+      <p id="quoteAuthor" class="quote-author">- Mini App</p>
+    </div>
+
+    <div class="card-footer">
+      <button id="generateBtn" class="btn btn-primary">
+        <span>New Mood & Quote</span>
+        <i class="fa-solid fa-wand-magic-sparkles"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
