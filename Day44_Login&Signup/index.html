@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Auth System</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="auth-card" id="mainCard">
+    <div id="mBox" class="msg-box"></div>
+    <div id="authContent" class="card-inner">
+      <div class="form-side">
+        <form id="lf" class="auth-form active">
+          <h2>Sign in</h2>
+          <div class="social-icons">
+            <a href="https://github.com/RajkumarGupta-git" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="tel:8858128312"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:rajkumargupta00423@gmail.com"><i class="fa-brands fa-google"></i></a>
+          </div>
+          <p class="sub-text">Or sign in using E-Mail Address</p>
+          <div class="input-group">
+            <input type="email" id="le" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" id="lp" placeholder="Password" required>
+          </div>
+          <a href="#" class="forgot-link">Forgot your password?</a>
+          <button type="submit" class="primary-btn">SIGN IN</button>
+        </form>
+        <form id="sf" class="auth-form">
+          <h2>Create Account</h2>
+          <div class="social-icons">
+            <a href="https://github.com/RajkumarGupta-git" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="tel:8858128312"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto:rajkumargupta00423@gmail.com"><i class="fa-brands fa-google"></i></a>
+          </div>
+          <p class="sub-text">Or fill in your details for registration</p>
+          <div class="input-group">
+            <input type="text" id="sn" placeholder="Full Name" required>
+          </div>
+          <div class="input-group">
+            <input type="email" id="se" placeholder="Email" required>
+          </div>
+          <div class="input-group">
+            <input type="password" id="sp" placeholder="Password" required>
+          </div>
+          <button type="submit" class="primary-btn">SIGN UP</button>
+        </form>
+      </div>
+      <div class="overlay-side">
+        <div class="overlay-panel overlay-login">
+          <h1>Create,<br>Account!</h1>
+          <p>Sign up if you still don't have an account ...</p>
+          <button class="outline-btn" id="toSignupBtn">SIGN UP</button>
+        </div>
+        <div class="overlay-panel overlay-signup">
+          <h1>Welcome<br>Back!</h1>
+          <p>To keep connected with us please login with your personal info ...</p>
+          <button class="outline-btn" id="toLoginBtn">SIGN IN</button>
+        </div>
+      </div>
+    </div>
+    <div id="welcomeScreen" class="welcome-container">
+      <div class="w-icon"><i class="fa-solid fa-circle-check"></i></div>
+      <h1 class="w-title">Welcome!</h1>
+      <p class="w-msg">You successfully login</p>
+      <h3 id="uDisp">User Name</h3>
+      <button class="logout-btn" onclick="location.reload()"><i class="fa-solid fa-right-from-bracket"></i> Logout</button>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
