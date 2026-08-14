@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ROCK • PAPER • SCISSORS</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-particles" aria-hidden="true">
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+    <div class="particle"></div>
+  </div>
+
+  <div class="game-container">
+    <header class="game-header">
+      <div class="header-top">
+        <span class="badge"><i class="fa-solid fa-trophy"></i> BEST OF 5</span>
+        <button id="sound-toggle" class="icon-btn" aria-label="Toggle sound effects">
+          <span class="sound-icon"><i class="fa-solid fa-volume-high"></i></span>
+        </button>
+      </div>
+      <h1 class="title">
+        <i class="fa-solid fa-hand-back-fist"></i> ROCK 
+        <span class="dot">•</span> PAPER 
+        <span class="dot">•</span> SCISSORS
+      </h1>
+      <p class="subtitle">Challenge the Computer</p>
+    </header>
+
+    <section class="stats-bar">
+      <div class="stat-pill">
+        <span class="stat-label"><i class="fa-solid fa-gamepad"></i> ROUND</span>
+        <span id="round-count" class="stat-value">1</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label"><i class="fa-solid fa-fire"></i> STREAK</span>
+        <span id="win-streak" class="stat-value">0</span>
+      </div>
+      <div class="stat-pill">
+        <span class="stat-label"><i class="fa-solid fa-crown"></i> HIGH SCORE</span>
+        <span id="high-score" class="stat-value">0</span>
+      </div>
+    </section>
+
+    <section class="scoreboard" aria-label="Scoreboard">
+      <div class="score-card player-card">
+        <span class="card-label"><i class="fa-solid fa-user"></i> YOU</span>
+        <span id="player-score" class="score-number">0</span>
+      </div>
+      <div class="score-card draw-card">
+        <span class="card-label"><i class="fa-solid fa-handshake"></i> DRAW</span>
+        <span id="draw-score" class="score-number">0</span>
+      </div>
+      <div class="score-card computer-card">
+        <span class="card-label"><i class="fa-solid fa-robot"></i> COMPUTER</span>
+        <span id="computer-score" class="score-number">0</span>
+      </div>
+    </section>
+
+    <section class="game-status" aria-live="polite">
+      <div id="status-message" class="status-message">Choose your weapon to start!</div>
+    </section>
+
+    <section class="arena" aria-label="Battlefield">
+      <div class="battle-side player-side">
+        <span class="side-label">YOU</span>
+        <div id="player-choice-display" class="choice-circle">
+          <span class="choice-emoji">?</span>
+        </div>
+      </div>
+
+      <div class="vs-divider">
+        <span class="vs-text">VS</span>
+      </div>
+
+      <div class="battle-side computer-side">
+        <span class="side-label">COMPUTER</span>
+        <div id="computer-choice-display" class="choice-circle">
+          <span class="choice-emoji">?</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Game Choices">
+      <button class="choice-btn" data-choice="rock" aria-label="Select Rock">
+        <span class="btn-emoji"><i class="fa-solid fa-hand-back-fist"></i></span>
+        <span class="btn-text">ROCK</span>
+      </button>
+      <button class="choice-btn" data-choice="paper" aria-label="Select Paper">
+        <span class="btn-emoji"><i class="fa-solid fa-hand"></i></span>
+        <span class="btn-text">PAPER</span>
+      </button>
+      <button class="choice-btn" data-choice="scissors" aria-label="Select Scissors">
+        <span class="btn-emoji"><i class="fa-solid fa-hand-scissors"></i></span>
+        <span class="btn-text">SCISSORS</span>
+      </button>
+    </section>
+
+    <footer class="game-footer">
+      <button id="reset-btn" class="reset-btn" aria-label="Reset game">
+        <span class="reset-icon"><i class="fa-solid fa-rotate-right"></i></span> RESET GAME
+      </button>
+      <p class="copyright">Designed for smooth futuristic gameplay.</p>
+    </footer>
+  </div>
+
+  <div id="modal-overlay" class="modal-overlay hidden" aria-hidden="true">
+    <div class="modal-card">
+      <h2 id="modal-title" class="modal-title">Game Over!</h2>
+      <p id="modal-desc" class="modal-desc">You won the match!</p>
+      <button id="modal-play-again" class="modal-btn"><i class="fa-solid fa-play"></i> PLAY AGAIN</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
